@@ -66,10 +66,10 @@ nano .env
 #### Step 4: Make Scripts Executable
 ```bash
 # Make the wrapper script executable
-chmod +x scripts/run_perplexity_mcp.sh
+chmod +x scripts/run_mcp_silent.sh
 
 # Make the server executable
-chmod +x src/perplexity_mcp_server.py
+chmod +x src/perplexity_fastmcp.py
 ```
 
 #### Step 5: Set Up Claude Code Integration
@@ -82,7 +82,7 @@ cat > ~/.claude/mcp_config.json << EOF
 {
   "mcpServers": {
     "perplexity": {
-      "command": "$(pwd)/scripts/run_perplexity_mcp.sh",
+      "command": "$(pwd)/scripts/run_mcp_silent.sh",
       "args": [],
       "env": {}
     }
@@ -250,10 +250,10 @@ nano .env
 #### Step 4: Make Scripts Executable
 ```bash
 # Make the wrapper script executable
-chmod +x scripts/run_perplexity_mcp.sh
+chmod +x scripts/run_mcp_silent.sh
 
 # Make the server executable
-chmod +x src/perplexity_mcp_server.py
+chmod +x src/perplexity_fastmcp.py
 ```
 
 #### Step 5: Set Up Claude Code Integration
@@ -266,7 +266,7 @@ cat > ~/.claude/mcp_config.json << EOF
 {
   "mcpServers": {
     "perplexity": {
-      "command": "$(pwd)/scripts/run_perplexity_mcp.sh",
+      "command": "$(pwd)/scripts/run_mcp_silent.sh",
       "args": [],
       "env": {}
     }
